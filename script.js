@@ -34,15 +34,11 @@ Good Bye Jim
 
     console.log(`Name "${name}" starts with character "${firstLetter}"`);
 
-    // STEP 12:
-    // Compare the 'firstLetter' retrieved in STEP 11 to lower case
-    // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
-    // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
-    // name in the loop.
+    // STEP 12: DONE
     if (firstLetter == 'j') {
-      // byeSpeaker.xxxx
+      byeSpeaker.speak(name);
     } else {
-      // helloSpeaker.xxxx
+      helloSpeaker.speak(name);
     }
   }
 }) ();
