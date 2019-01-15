@@ -23,22 +23,16 @@ Good Bye Jim
 */
 
 (function () {
-  // STEP 1: DONE
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-  // STEP 10: DONE
-  for (var name in names) {
-
-    // STEP 11: DONE
+  names.forEach ((name) => {
     var firstLetter = name.toLowerCase().charAt(0);
-
-    console.log(`Name "${name}" starts with character "${firstLetter}"`);
-
-    // STEP 12: DONE
+  
     if (firstLetter == 'j') {
       byeSpeaker.speak(name);
     } else {
       helloSpeaker.speak(name);
     }
-  }
+  });
+
 }) ();
